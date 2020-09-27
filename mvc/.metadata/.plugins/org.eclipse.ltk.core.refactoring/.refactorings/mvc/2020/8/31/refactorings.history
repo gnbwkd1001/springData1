@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;domain.jsp&apos; to &apos;domain.jsp&apos;&#x0A;- Original project: &apos;mvc&apos;&#x0A;- Destination element: &apos;domain.jsp&apos;&#x0A;- Original element: &apos;domain.jsp&apos;" description="Copy file" element1="src/main/webapp/WEB-INF/domain.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1596242223310" target="/mvc/src/main/webapp/WEB-INF/domain.jsp" units="0" version="1.0"/>
+</session>

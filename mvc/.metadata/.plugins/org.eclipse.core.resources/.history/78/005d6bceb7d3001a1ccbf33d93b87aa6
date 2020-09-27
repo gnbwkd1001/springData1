@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Show Book Page</h1> 
+	<a href="/">back to main</a>
+	<br/>
+	<br/>
+	<h3>${book.title}</h3><br>
+	<h3>${book.description}</h3><br>
+	<h3>${book.language}</h3><br>
+	<h3>${book.numberOfPages}</h3><br>
+	
+</html>

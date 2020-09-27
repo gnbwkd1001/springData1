@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%> 
+    <%@ page isErrorPage="true" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Edit Entity Page</h1> 
+	<a href="/">back to main</a>
+	<br/>
+	<br/>
+	<form:form action="/books/edit/${book.id}" method="post" modelAttribute="book">
+		<p>
+	        <form:label path="title">Title</form:label>
+	        <form:errors path="title"/>
+	        <form:input path="title"/>
+	    </p>
+	    <p>
+	        <form:label path="description">Description</form:label>
+	        <form:errors path="description"/>
+	        <form:input path="description"/>
+	    </p>
+	    <p>
+	        <form:label path="language">Language</form:label>
+	        <form:errors path="language"/>
+	        <form:input path="language"/>
+	    </p>
+	    <p>
+	        <form:label path="numberOfPages">Pages</form:label>
+	        <form:errors path="numberOfPages"/>     
+	        <form:input type="number" path="numberOfPages"/>
+	    </p>    
+	    <input type="submit" value="Submit"/>
+	</form:form>
+	<%-- <form method="POST" action="/books/edit/${book.id}">
+		<label for="title">Title:</label><br>
+		<input type="text" name="title" value="${book.title}"><br>
+		
+		<label for="description">Description:</label><br>
+		<input type="text" name="description" value="${book.description}"><br>
+		
+		<label for="language">Language:</label><br>
+		<input type="text" name="language" value="${book.language}"><br>
+		
+		<label for="numberOfPages">Pages:</label><br>
+		<input type="text" name="pages" value="${book.numberOfPages}"><br>
+		<button>Edit Entity</button>	
+	</form> --%>
+</html>
